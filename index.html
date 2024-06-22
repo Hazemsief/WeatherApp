@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+    </style>
+    <title>Weather</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="./imgs/logo.png" alt="Weather logo" class="logo">
+                <div class="logo-info d-inline-block align-middle">
+                    <h1 class="site-title">
+                        Weather <i class="fa-solid fa-sun weather-icon"></i>
+                    </h1>
+                    <span class="site-description">tagline goes here</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse mt-4 my-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item active"><a class="nav-link">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Live cameras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+                    <li class="nav-item"><a class="nav-link" href='#'>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <form class="find-form position-relative">
+                <input id="findInput" class="form-control w-100" type="text" placeholder="Find your location...">
+                <button id="btnFind" class="btn-find position-absolute" type="button">Find</button>
+            </form>
+        </div>
+    </section>
+    <div class="forecast-table">
+        <div class="container">
+            <div id="forecast" class="row rounded-3 forecast-container">
+                <div class="col-lg-4">
+                    <div class="forecast today rounded rounded-3">
+                        <div id="today" class="forecast-header px-3 d-flex justify-content-between">
+                            <div class="day fw-semibold"></div>
+                            <div class="date text-light"></div>
+                        </div>
+                        <div id="current" class="forecast-content px-3">
+                            <div class="location fs-4"></div>
+                            <div class="time me-auto"></div>
+                            <div class="degree d-flex justify-content-between">
+                                <div class="num"></div>
+                                <div class="forecast-icon align-self-end"></div>
+                            </div>
+                            <p class="custom fs-5"></p>
+                            <div class="mt-4 d-flex justify-content-between"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tomorrow" class="col-lg-4 mt-3 mt-lg-0">
+                    <div class="text-center h-75 rounded-2 forecast tomorrow">
+                        <div class="forecast-header fw-semibold px-3">
+                            <div class="day"></div>
+                        </div>
+                        <div class="forecast-content px-3">
+                            <div class="forecast-icon"></div>
+                            <div class="degree fs-2"></div>
+                            <p class="fs-5 mb-0"></p>
+                            <p class="custom fs-5"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="afterTomorrow" class="col-lg-4 mt-3 mt-lg-0">
+                    <div class="text-center h-75 rounded-2 forecast">
+                        <div class="forecast-header fw-semibold px-3">
+                            <div class="day"></div>
+                        </div>
+                        <div class="forecast-content px-3">
+                            <div class="forecast-icon"></div>
+                            <div class="degree fs-2"></div>
+                            <p class="fs-5 mb-0"></p>
+                            <p class="custom fs-5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row flex-column flex-md-row align-items-center mb-3">
+                <div class="col-lg-8">
+                    <form class="subscribe-form position-relative">
+                        <input id="subscribeInput" class="form-control w-100" type="text" placeholder="Enter your email to subscribe...">
+                        <button id="btnSubscribe" class="btn-find position-absolute" type="button">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-center ms-lg-auto mt-4 mt-lg-0 pt-2 pt-lg-0">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="fs-5 text-center">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer> 
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
